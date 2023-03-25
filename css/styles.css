@@ -50,6 +50,9 @@ body {
   text-decoration: none;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 .first-logo-part {
   color: var(--object-primary-background-color);
@@ -59,10 +62,14 @@ body {
   line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation .link-menu {
   display: flex;
+  column-gap: 30px;
 }
+
 .link-menu .link {
   text-decoration: none;
   color: var(--text-primary-color);
@@ -73,6 +80,9 @@ body {
 }
 .top-contacts {
   display: flex;
+  column-gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .top-contacts .contact-link {
   color: var(--text-secondary-color);
