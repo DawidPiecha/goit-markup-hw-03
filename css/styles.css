@@ -31,13 +31,16 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .top-menu {
   background-color: var(--object-secondary-background-color);
+  width: 100%;
+}
+.top-menu-box {
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo {
   font-family: "Raleway";
