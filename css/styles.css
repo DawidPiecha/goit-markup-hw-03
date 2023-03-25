@@ -14,6 +14,7 @@
   --secondary-box-shadow-color: #0000001f;
   --tertiary-box-shadow-color: #00000024;
   --quarternary-box-shadow-color: #00000033;
+  --header-border-bottom-color: #ececec;
 }
 * {
   margin: 0;
@@ -39,8 +40,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  border-bottom: 1px solid var(--header-border-bottom-color);
 }
 .logo {
   font-family: "Raleway";
@@ -68,6 +70,8 @@ body {
 .navigation .link-menu {
   display: flex;
   column-gap: 30px;
+  padding-left: 0;
+  margin-right: 371px;
 }
 
 .link-menu .link {
@@ -83,6 +87,7 @@ body {
   column-gap: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 0;
 }
 .top-contacts .contact-link {
   color: var(--text-secondary-color);
@@ -224,9 +229,32 @@ body {
 .footer {
   background-color: var(--page-secondary-background-color);
   text-decoration: none;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--text-quaternary-color);
+  text-decoration: none;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  padding-left: 15px;
+  margin-bottom: 20px;
 }
 .second-logo-part {
   color: var(--text-tertiary-color);
+}
+
+.lower-contact-list {
+  margin-top: 20px;
+  padding-left: 15px;
 }
 .lower-contacts .lower-link {
   color: var(--alpha-color);
@@ -234,6 +262,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  font-style: normal;
+  gap: 9px;
 }
 .lower-contacts .lower-link:hover,
 .lower-contacts .lower-link:focus {
@@ -274,7 +304,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-/*dodałem bo nie mogłem patrzeć na te kropki :)*/
+/* dots deleted form uls :)*/
 ul {
   list-style-type: none;
 }
