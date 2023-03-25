@@ -15,14 +15,29 @@
   --tertiary-box-shadow-color: #00000024;
   --quarternary-box-shadow-color: #00000033;
 }
-
+* {
+  margin: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--text-primary-color);
   background-color: var(--page-primary-background-color);
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .top-menu {
   background-color: var(--object-secondary-background-color);
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 .logo {
   font-family: "Raleway";
@@ -42,6 +57,9 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
+.navigation .link-menu {
+  display: flex;
+}
 .link-menu .link {
   text-decoration: none;
   color: var(--text-primary-color);
@@ -50,7 +68,9 @@ body {
 .link-menu .link:focus {
   color: var(--object-primary-background-color);
 }
-
+.top-contacts {
+  display: flex;
+}
 .top-contacts .contact-link {
   color: var(--text-secondary-color);
   font-size: 14px;
@@ -66,6 +86,9 @@ body {
 
 .top-container {
   background-color: var(--page-secondary-background-color);
+  display: flex;
+  padding-bottom: 200px;
+  padding-top: 200px;
 }
 .top-container-text {
   color: var(--text-tertiary-color);
@@ -75,6 +98,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  min-height: 120px;
+  min-width: 696px;
 }
 .top-container-button {
   background-color: var(--object-primary-background-color);
@@ -87,13 +112,28 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  min-height: 50px;
   cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
 .advantages {
   letter-spacing: 0.03em;
   font-size: 14px;
+  width: 100%;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.advantages-list {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: space-between;
+  column-gap: 30px;
 }
 .topic {
   line-height: 1.14;
@@ -110,9 +150,21 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.what-we-do-list {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 15px;
+  margin-top: 50px;
+}
+.what-we-do-list-image {
+  display: block;
 }
 .teammates {
   background-color: var(--page-tertiary-background-color);
+  width: 100%;
 }
 .teammates-header {
   color: var(--text-primary-color);
@@ -120,6 +172,14 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.teammates-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15px;
+  margin-top: 50px;
 }
 .teammates-item {
   background-color: var(--object-secondary-background-color);
@@ -128,6 +188,9 @@ body {
     0px 2px 1px var(--quarternary-box-shadow-color);
   border-radius: 0px 0px 4px 4px;
 }
+.teammates-item-photo {
+  display: block;
+}
 .teammates-item-name {
   color: var(--text-primary-color);
   font-weight: 500;
@@ -135,6 +198,7 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 30px auto 10px;
 }
 .teammates-item-role {
   color: var(--text-secondary-color);
@@ -142,6 +206,7 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 10px auto 30px;
 }
 .footer {
   background-color: var(--page-secondary-background-color);
