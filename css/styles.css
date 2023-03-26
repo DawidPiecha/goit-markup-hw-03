@@ -24,6 +24,7 @@ body {
   color: var(--text-primary-color);
   background-color: var(--page-primary-background-color);
 }
+/* extra class for main div in each section of index.html and portfolio.html*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -138,6 +139,7 @@ body {
   margin-right: auto;
   margin-top: 30px;
 }
+/* this is lorem ipsum-list section in index.html*/
 .advantages {
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -153,15 +155,18 @@ body {
   justify-content: space-between;
   column-gap: 30px;
 }
+/*heading of lorem ipsum section in index.html*/
 .topic {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--text-primary-color);
 }
+/*dedcription of lorem ipsum section in index.html*/
 .description {
   color: var(--text-secondary-color);
   line-height: 1.71;
 }
+/*Czym się zajmujemy section in index.html*/
 .what-we-do {
   color: var(--text-primary-color);
   font-size: 36px;
@@ -180,6 +185,7 @@ body {
 .what-we-do-list-image {
   display: block;
 }
+/* Nasz zespół section in index.html*/
 .teammates {
   background-color: var(--page-tertiary-background-color);
   width: 100%;
@@ -226,6 +232,7 @@ body {
   letter-spacing: 0.03em;
   margin: 10px auto 30px;
 }
+/* footer of index.hmtl and portfolio.html*/
 .footer {
   background-color: var(--page-secondary-background-color);
   text-decoration: none;
@@ -237,6 +244,7 @@ body {
   flex-direction: column;
   margin-right: auto;
 }
+/*logo part of footer*/
 .footer-logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -251,7 +259,7 @@ body {
 .second-logo-part {
   color: var(--text-tertiary-color);
 }
-
+/*contact part of footer*/
 .lower-contact-list {
   margin-top: 20px;
   padding-left: 15px;
@@ -269,11 +277,27 @@ body {
 .lower-contacts .lower-link:focus {
   color: var(--text-tertiary-color);
 }
-
+/* buttons of a list in portfolio.html*/
+.portfolio-upper-section {
+  padding-bottom: 0;
+}
+.portfolio-upper-section-box {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 50px;
+}
+.list-buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+  padding-left: 0;
+}
+/*portfolio buttons stylization*/
 .portfolio-button {
   background-color: var(--page-tertiary-background-color);
   color: var(--text-primary-color);
-  box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
+  border: 0;
+
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -281,27 +305,58 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  padding: 6px 22px;
 }
+/* Pseudo-classes hover and focus change font color, buttons' background and make a shadow for buttons*/
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--object-primary-background-color);
   color: var(--object-secondary-background-color);
+  box-shadow: 0px 4px 4px var(--primary-box-shadow-color);
+}
+
+/*images and their headings and descriptions in main section in porftolio.html*/
+.portfolio-lower-section {
+  padding-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.portfolio-lower-section-list {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .portfolio-lower-section-item {
   background-color: var(--text-tertiary-color);
-  border: 1px solid var(--border-color);
+}
+.portfolio-lower-section-item-picture {
+  display: block;
 }
 .portfolio-lower-section-item-heading {
   color: var(--text-primary-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 .portfolio-lower-section-item-description {
   color: var(--text-secondary-color);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  margin-top: 4px;
 }
 
 /* dots deleted form uls :)*/
