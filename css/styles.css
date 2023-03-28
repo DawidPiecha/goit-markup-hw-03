@@ -2,6 +2,7 @@
   --page-primary-background-color: #e5e5e5;
   --page-secondary-background-color: #2f303a;
   --page-tertiary-background-color: #f5f4fa;
+  --page-quarternary-background-color: #fff;
   --object-primary-background-color: #2196f3;
   --object-secondary-background-color: #ffffff;
   --border-color: #eeeeee;
@@ -36,6 +37,7 @@ body {
 .top-menu {
   background-color: var(--object-secondary-background-color);
   width: 100%;
+  border-bottom: 1px solid var(--header-border-bottom-color);
 }
 .top-menu-box {
   padding-left: 15px;
@@ -43,7 +45,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 1px solid var(--header-border-bottom-color);
 }
 .logo {
   font-family: "Raleway";
@@ -147,6 +148,7 @@ body {
   padding-bottom: 0;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: var(--page-quarternary-background-color);
 }
 .advantages-list {
   display: flex;
@@ -168,17 +170,20 @@ body {
 }
 /*Czym się zajmujemy section in index.html*/
 .what-we-do {
+  background-color: var(--page-quarternary-background-color);
+}
+.what-we-do-heading {
   color: var(--text-primary-color);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+  background-color: var(--page-quarternary-background-color);
 }
 .what-we-do-list {
   display: flex;
   justify-content: space-between;
-
   padding: 0 15px;
   margin-top: 50px;
 }
@@ -280,11 +285,12 @@ body {
 /* buttons of a list in portfolio.html*/
 .portfolio-upper-section {
   padding-bottom: 0;
+  background-color: var(--page-quarternary-background-color);
 }
 .portfolio-upper-section-box {
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .list-buttons {
   display: flex;
@@ -320,6 +326,7 @@ body {
   padding-top: 0;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: var(--page-quarternary-background-color);
 }
 .portfolio-lower-section-list {
   padding-left: 0;
@@ -327,9 +334,7 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio-lower-section-item {
-  background-color: var(--text-tertiary-color);
-}
+
 .portfolio-lower-section-item-picture {
   display: block;
 }
@@ -340,10 +345,7 @@ body {
   letter-spacing: 0.06em;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-top: 20px;
-  margin-bottom: 4px;
+  padding: 20px 24px 4px;
 }
 .portfolio-lower-section-item-description {
   color: var(--text-secondary-color);
@@ -353,10 +355,7 @@ body {
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  margin-top: 4px;
+  padding: 4px 24px 20px;
 }
 
 /* dots deleted form uls :)*/
